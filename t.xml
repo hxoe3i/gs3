@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <command>
 <a>
-<execute>write-host -ForegroundColor Cyan "$(Get-Date -Format s) Download Cradle - create new usr `n"</execute> 
-<execute>New-LocalUser "rrrccc1" $Password = ConvertTo-SecureString "X@343fswfee@KK@" -FullName "rrrccc full name" -Description "rrrccc desc"</execute> 
+<execute>write-host -ForegroundColor Cyan "$(Get-Date -Format s) Download Cradle - create new usr `n"</execute>
+<execute>$Password = ConvertTo-SecureString "X@343fswfee@KK@" -AsPlainText Force
+<execute>New-LocalUser "rrrccc1" -Password $Password -FullName "rrrccc full name" -Description "rrrccc desc"</execute> 
 <execute>Add-LocalGroupMemeber -Group "Administrators" -Memeber "rrrccc1"</execute>
 </a>
 </command>
