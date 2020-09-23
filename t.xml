@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <command>
-<a>
-  <execute>write-host -ForegroundColor Cyan "$(Get-Date -Format s) Download Cradle - create new usr `n"</execute>
-</a>
+  <a>
+    <execute>write-host -ForegroundColor Cyan "$(Get-Date -Format s) Download Cradle - create new usr `n"</execute>
+  </a>
 </command>
+<command>
+  <a>
+    <execute>write-host "sdf"</execute>
+  </a>
+</command>
+    
