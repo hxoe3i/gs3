@@ -3,5 +3,5 @@
   <a>
     <execute>write-host -ForegroundColor Cyan "$(Get-Date -Format s) Download Cradle - create new usr `n"; write-host "this and that"</execute>
   </a>
-</command?
+</command>
     
